@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+    <title>MATMA</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+     <link rel="stylesheet" href="css/fonts.css">
+   <!-- <link rel="stylesheet" href="css/buscar.css">-->
+    
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link rel="shortcut icon" href="imagenes/index/icono.png">
+     <!-- menu estatico -->
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+       <!-- menu estatico -->
+  </head>
+<body>
+	  <header class="header">
+	  	<div class="contenedor">
+	  		<a  href="index.html"><img class="logo" src="imagenes/index/logomatma.png" alt="" ></a>
+	  		<span class="icon-menu" id="btn-menu"></span>
+	  		<nav class="nav" id="nav">
+	  		<ul class="menu">
+	  			<li class="menu__item"><a class="menu__link"  href="#proyectos" id="proyecto1">PROYECTOS</a></li>
+	  			<li class="menu__item"><a class="menu__link"  href="#nosotros" id="nosotros1">NOSOTROS</a></li>
+	  			<!--<li class="menu__item"><a class="menu__link"  href="#tienda" id="tienda1">TIENDA</a></li> -->
+	  			<!--<li class="menu__item"><a class="menu__link"  href="">BUSCAR</a></li> -->
+		
+			<form class="flexsearch--form" action="#" method="post">
+				<div class="flexsearch--input-wrapper">
+					<input class="flexsearch--input" type="search" placeholder="BUSCAR">
+				</div>
+				<input class="flexsearch--submit" type="submit" value=""/>
+			</form>
+    
+	  		</ul>	
+	  		</nav>
+	  	</div>
+	  	
+<!-- inicio Menu Estatico  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('header').outerHeight(true);
+    var altura_del_menu = $('menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.logo').addClass('fixed');
+        $('.menu').addClass('fixed');
+        $('.contenedor').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.logo').removeClass('fixed');
+        $('.menu').removeClass('fixed');
+        $('.contenedor').css('margin-top', '90');
+    }
+}
+
+</script>    
+          
+<!-- Fin Menu Estatico  -->
+          
+	  </header>  
+	  <div class="banner">
+	  	<div class="contenedor">
+      
+<video src="" autoplay muted loop  width=100% height=70% ></video>
+	  		<!--<img src="imagenes/index/fotobanner.jpg" alt="" class="banner__img">-->
+	  		<p1 class="banner_txt">Una compañia de
+  diseño con energía innovadora y creativa. Especializada en ilustración e Identidad.No dude en ponerse en contacto con nosotros</p1>
+	  	</div>
+	  </div>
+	  <mmaincontenedorain class="main">
+	  <div class="contenedor">
+	  	<section id="proyectos" class="info">
+	  		<h1  class="titulo__pro">PROYECTOS</h1>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/todoagrobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/todoagro.jpg';" onmouseout="this.src='imagenes/index/todoagrobn.jpg';"/>
+	  			<a href="proyecto1.html" class="link"><h2 class="info__titulo">TODO AGRO</h2></a>
+	  		</article>
+	  		
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/monteabajobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/monteabajo.jpg';" onmouseout="this.src='imagenes/index/monteabajobn.jpg';"/>
+	  			<a href="proyecto1.html" class="link"><h2 class="info__titulo">MONTE ABAJO</h2></a>
+	  		</article>
+	  		
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/cerobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/cero.jpg';" onmouseout="this.src='imagenes/index/cerobn.jpg';"/>
+	  			<h2 class="info__titulo">CERO</h2></a>
+	  		</article>
+	  		
+	  		<article class="info_colummna">
+	  			
+	  			<img src="imagenes/index/kerobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/kero.jpg';" onmouseout="this.src='imagenes/index/kerobn.jpg';"/>
+	  			<h2 class="info__titulo">KERO</h2></a>
+	  		</article>
+	  		
+	  	</section>
+	  	
+	    <section class="cursos">
+	    	<img src="imagenes/index/guanchaka3.gif" alt="" class="cursos__img">
+	    	<a href="#" class="link"><h2 class="info__titulo">BLASFEMIA</h2></a>
+	    </section>
+	    
+	    <section class="info">
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/todoagrobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/todoagro.jpg';" onmouseout="this.src='imagenes/index/todoagrobn.jpg';"/>
+	  			<a href="proyecto1.html" class="link"><h2 class="info__titulo">TODO AGRO</h2></a>
+	  		</article>
+	  		
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/monteabajobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/monteabajo.jpg';" onmouseout="this.src='imagenes/index/monteabajobn.jpg';"/>
+	  			<a href="proyecto1.html" class="link"><h2 class="info__titulo">MONTE ABAJO</h2></a>
+	  		</article>
+	  		
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/cerobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/cero.jpg';" onmouseout="this.src='imagenes/index/cerobn.jpg';"/>
+	  			<h2 class="info__titulo">CERO</h2></a>
+	  		</article>
+	  		
+	  		<article class="info_colummna">
+	  			
+	  			<img src="imagenes/index/kerobn.jpg" alt="" class="info__img" onmouseover="this.src='imagenes/index/kero.jpg';" onmouseout="this.src='imagenes/index/kerobn.jpg';"/>
+	  			<h2 class="info__titulo">KERO</h2></a>
+	  		</article>
+	  	</section>
+	  	
+	  	<section class="cursos">
+	    	<img src="imagenes/index/guanchaka3.gif" alt="" class="cursos__img">
+	    	<a href="proyecto1.html" class="link"><h2 class="info__titulo">BLASFEMIA</h2></a>
+	    	<a href="catalogoproy.html" class="link"><h2 class="gif__titulop">+ PROYECTOS</h2></a>
+	    </section>
+	
+	    <section id="nosotros" class="nosotros">
+		<h2  class="titulo__pro">NOSOTROS</h2>
+		<div class="nosotros__columna">
+			<p class="nosotros__txt">Matma Studio, es una entidad de diseño multidisciplinario cuyo nivel de conceptualización y creatividad han sido la clave primordial de su éxito.
+			<br><br>
+			Fundada en 2011 por Luis Bolaños y Oscar Medina, MATMA asesora y dirige asuntos estratégicos y de identidad a empresas e Instituciones.
+			<br><br>
+			Conformada por un equipo de personas apasionadas por lo que hacen, capaz de adaptarse a las necesidades y retos de cualquier proyecto.
+			<br><br>
+			Todos sus trabajos llevan la firma de una marcada herencia cultural y engloba disciplinas como gráficos, identidad, tipografía, ilustración, packanging, sitios web, exposiciones, instalaciones y artes visuales.
+			</p>
+		
+		</div>
+		
+		<div class="nosotros__columnaimg">
+			<img src="imagenes/index/fotobanner.jpg" alt="" class="nosotros__img">
+		</div>
+	</section>
+	 
+	    <section class="socios">
+	  	<h2 class="titulo__pro">SOCIOS</h2>
+	  	<div class="socioscolu">
+	  		<img src="imagenes/index/persona.jpg" alt="" class="socios_img">
+	  			<h3 class= "socios_titulo">OSCAR MEDINA</h3>
+	  			<p class="nosotros__txt"><br><br><br>Fundador y director de matma studio es diseñador gráfico y artista visual, sus trabajos han sido expuestos en paises como Argentina,Chile, España y Estados Unidos. <br><br><br>
+Ha desarrollado proyectos visuales en distintas áreas, como  diseño, tipografía, ilustración, vestuario y muralismo.</p>
+	  			
+	  			<a href="contacto.html" class="link"><p class="link__titulo"><br>EMAIL</p></a>
+	  		
+	  	</div>
+	  	
+	  	<div class="socioscolu">
+	  	<img src="imagenes/index/persona.jpg" alt="" class="socios_img">
+	  		
+	  			<h3 class= "socios_titulo">JESSICA VINUEZA</h3>
+	  			<p class="nosotros__txt"><br>Directora de artes escénicas graduada en el centro de investigación cinematográfica ( cic) buenos aires 2014. hace más de 5 años trabaja como diseñadora de producción realizando proyectos audiovisuales en los ámbitos, culturales, artísticos y sociales, utilizando diversas técnicas artísticas como el mapping, video, fotografía y el collage, para crear campañas audiovisuales y estrategias de comunicación integrales.</p>
+            
+	  
+	  		<a href="contacto.html" class="link"><p class="link__titulo"><br>EMAIL</p></a>
+	  	</div>
+	  	
+	  	<div class="socioscolu">
+	  		<img src="imagenes/index/persona.jpg" alt="" class="socios_img">
+	  		
+	  			<h3 class= "socios_titulo">NADIA MOSQUERA</h3>
+	  			<p class="nosotros__txt">Diseñadora Ambateña de textiles e indumentaria, graduada en la Universidad de Palermo en el año 2014. En el curso de su carrera participó de varios concursos internacionales de diseño, representando a su país. <br>
+                Su propuesta tiene el afán de revalorizar las técnicas ancestrales de intervención textil para ser aplicados en el ejercicio del diseño. Actualmente se encuentra trabajando como docente de diseño en la Universidad Técnica de Ambato en la Facultad de Diseño, Artes y Arquitectura.</p>
+	  			<a href="contacto.html" class="link"><p class="link__titulo">EMAIL</p></a>
+	  	
+	  	</div>
+	
+	  </section>
+
+
+	  </div>	
+	  </main>
+	  
+	 <h1 class="titulo__pro">CONTACTO</h1>
+     <footer class="footer">
+     
+   <section class="contacto">
+	  		<premios class="contactodesc">
+	  			<p class="contact__txt">Cdla. El Rosal MzC C% <br>Berlìn y 9 de Octubre<br>Riobamba, Ecuador<br>
+	  			<br>+ 0987899628<br>+0999099157<br>info@matma.studio
+                </p>
+	  		</premios>
+	  		
+       <premios class="contactodesc">
+	  			<p class="contact__txt"><a href="#" class="link  linkcontacto">Facebook</a><br><a href="#" class="link linkcontacto">Instagram</a><br><a href="#" class="link linkcontacto">Vimeo</a>
+          
+           </p>
+	  		</premios>
+       
+	  		<premios class="contactodesc">
+                
+	  			<p class="contact__txt">
+                    <a href="#" class="link linkcontacto"> Nuevos Negocios</a>
+                    <br>
+                    <a href="#" class="link linkcontacto">Pasantías</a>
+				</p>
+	  		</premios>
+
+	  </section>
+         
+	  </footer>
+<p class="contact__txt1">© 2018 matma.studio.Todos los derechos reservados</p>
+	  <script src="js/menu.js"></script>
+      <script src="js/jquery.scroll.js"></script>
+      <script src="js/scroll.js"></script>      
+</body>
+</html>

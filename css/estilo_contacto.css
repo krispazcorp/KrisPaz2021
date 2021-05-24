@@ -1,0 +1,547 @@
+
+/*------- Estilo de letra propio matma-------*/
+@font-face
+{
+ font-family: "matma";
+ src: url("../tipografia/helvetica-lt.ttf");
+}
+
+/*------- Estilos Generales-------*/
+
+*{
+box-sizing: border-box;	
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+body{
+    font-family: 'matma';
+	letter-spacing: 1.5px;
+	line-height: 20px;
+	background-color: #222525;	
+}
+
+
+
+
+h1,h2,h3,h4,a,p{
+	font-family: 'matma';
+	letter-spacing: 1.5px;
+}
+
+.link {color:#939699; text-decoration:none;
+font-family: 'matma'; }
+
+.link:hover {color:#fff;text-decoration:none;}
+
+.titulo__pro{
+	color: #939699;
+	margin-left: 10px;
+	font-size: 15px;
+	margin-top: 50px;
+}
+/*------- Estilos header-------*/
+
+.header {
+	height: 60px;
+}
+
+.header .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.logo{
+	z-index: 100;
+	width: 65%;
+	margin: 5px;
+}
+
+.icon-menu {
+display: block;
+width: 50px;
+height: 30px;
+font-size: 30px;
+color: #939699;
+text-align: center;
+line-height: 35px;
+border-radius: 5px;
+margin: 5px;
+margin-left: auto;
+cursor: pointer;
+}
+
+
+/*------- Estilos del menu -------*/
+.nav{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 50%;
+	left: -1000%;
+	transition: all 0.8s;
+	z-index: 100;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: #222525;
+	z-index: 100;
+}
+
+.menu__link {
+	display: block;
+	padding: 15px;
+	color: #939699;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: 12px;	
+}
+
+.menu__link:hover, .select{
+	color: #fff;
+}
+
+.mostrar{
+	left: 0;
+}
+
+.fixed{
+	height: 0px 
+	}
+
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    border-style: none;
+    color:#939699;
+    font-family: 'matma';
+	letter-spacing: 3px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin-left: 15px;
+	font-size: 12px;
+	background: none;
+	margin-bottom: 10px;
+	margin-top: 5p10;
+	padding-top: 15px;
+	
+}
+	
+.flexsearch--submit {
+  display: block;
+  padding: 15PX;
+  border: none;
+  margin-top: -7px; /* margin-top + border-width */
+  margin-right: 0px; /* border-width */
+  background: transparent;
+  color: #939699;
+  font-family: 'matma';
+  font-size: 22px;
+  
+}
+
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #fff; 
+}
+
+.flexsearch--submit:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+	color: #939699;  
+}
+
+input:-moz-placeholder {
+  color: #fff;
+}
+
+/***********************
+ * FIN Estructura menu buscar *
+ ***********************/
+
+/*------- Estilos PROYECTOS -------*/
+
+
+.link{
+	font-size: 12px;
+}
+
+
+/*------- Estilos NOSOTROS -------*/
+
+.nosotros__txt{
+	color: #939699;
+	font-size: 10px;
+	text-align: justify;
+	line-height: 20px;
+	padding: 5px;
+}
+
+.nosotros__columnaimg{
+	background: rgba(255,255,255,0.8);
+	/*background-color: rgb(255,255,255); opacity: 0.9;*/
+}
+/*------- Estilos FOOTER-------*/
+
+
+.footer{
+	background-color: #000;
+}
+.contact__txt{
+	color: #939699;
+	font-size: 8px;
+	text-align: center;
+	margin-left: 0px;
+}
+.datos{
+	margin-left: 12px;
+}
+
+
+/*------- Estilos Cuadro Contacto-------*/
+.cont_form{
+	box-sizing: border-box;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+
+.cont_inp, .cont_text{
+	width: 100%;
+	color: #939699;
+	margin-bottom: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	border: none;
+	background: none;
+	background: rgba(255,255,255,0.2);
+}
+
+.cont_text{
+	min-height: 100px;
+	max-height: 200px;
+	max-width: 100%;
+	font-size: 14px;
+	
+}
+
+#boton{
+	text-align: left;
+	font-size: 14px;
+	background: none;
+	border: none;
+	color: #939699;
+	margin: 5px;
+}
+
+#boton:hover{
+	color: #fff;
+	cursor: pointer;
+}
+
+.h4{
+	text-align: center;
+	color: #939699;
+	padding: 80px 0px;
+	font-size: 20px;
+}
+
+/*------- Estilos RESPONSIVE-------*/
+
+@media(min-width:480px){
+
+.logo{
+width: 55%;
+margin: 5px;
+}
+	
+	
+.fixed{
+	height: 0px 
+	}
+
+.contact__txt{
+	font-size: 10px;
+}
+
+}
+
+
+@media(min-width:760px){
+/*------- Estilos Generales-------*/	
+	body{
+	margin: 20px;
+}
+	
+.titulo__pro{
+	margin-left: 25px;
+	font-size: 17px;
+	width: 100%;
+}
+	
+	
+/*------- Estilos header-------*/
+	
+.logo{
+width: 40%;
+margin: 5px;
+margin-left: 20px;
+}	
+	
+/*------- Estilos del menu -------*/		
+.nav{
+	top: 90px;	
+}
+	
+.menu__link {
+	margin-left: 10px;
+	font-size: 12px;
+	
+}
+	
+.flexsearch--input {
+	margin-left: 22px;
+	
+}	
+	
+	
+/*------- Estilos NOSOTROS -------*/	
+	
+.nosotros{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+	}	
+	
+.nosotros__columna{
+	width: 38%;	
+	}
+.nosotros__columnaimg{
+	width: 58%;	
+	}
+	
+.nosotros__txt{
+	font-size: 12px;
+	text-align: justify;
+	line-height: 15px;
+	margin-left: 20px;
+}
+	
+
+
+/*------- Estilos FOOTER-------*/	
+	
+
+.info_detalle{
+	width: 31%;
+	font-size: 8px;
+	text-align: inherit;
+	}
+	
+.contacto{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}
+	.contactodesc{
+		width: 31%;
+	}
+.contact__txt{
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 11px;
+	} 	
+	
+}
+
+@media(min-width:1024px){
+	
+/*------- Estilos Generales-------*/
+body{
+	margin: 30px;
+}
+	
+.titulo__pro{
+	font-size: 20px;
+	width: 100%;
+}
+    
+/*------- Estilos FOOTER-------*/	
+
+.contact__txt{
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 13px;
+	} 
+
+/*------- Estilos header-------*/
+	
+.logo{
+width: 30%;
+margin: 5px;
+margin-left: 21px;
+}
+
+/*------- Estilos del menu -------*/	
+.nav{
+	position: absolute;
+	top: 30px;
+	left: 34%;
+	transition: all 0.8s;
+	z-index: 100;
+    background-color: none;
+}
+	
+	
+.icon-menu{
+	display: none;
+	}
+	
+.fixed{
+	position:fixed; 
+	top:0;
+    width: 30%;
+    height: 7%;
+	}
+	
+.menu{
+	display: flex;	
+	margin-right: 20px;
+    background: none;
+
+	}
+	
+.menu__link {
+	margin-left: 10px;
+	font-size: 16px;
+	
+}
+	
+.flexsearch--input {
+	margin-left: 15px;
+	font-size: 16px;
+	
+}
+
+/*------- Estilos NOSOTROS -------*/	
+.nosotros__txt{
+	font-size: 13x;
+	text-align: justify;
+	line-height: 23px;
+}
+	
+.h4{
+	font-size: 22px;
+	padding: 100px 0px;
+}	
+	
+}	
+
+
+
+@media(min-width:1280px){
+
+/*------- Estilos header-------*/
+
+.logo{
+width: 30%;
+margin-bottom: 15px;
+margin-left: 21px;
+}
+
+
+/*------- Estilos del menu -------*/	
+	
+.nav{
+	left: 36.5%;
+}
+	
+
+.fixed{
+	position:fixed; 
+	top:0;
+    width: 20%;
+    height: 7%;
+	}
+	
+.menu{
+	display: flex;	
+	margin-left: 40px;
+    background: none;
+
+	}
+
+	
+.menu__link {
+	margin-left: 10px;
+	font-size: 18px;
+	
+}
+	
+	.flexsearch--input {
+	margin-left: 15px;
+	font-size: 18px;
+	
+}
+	
+	
+/*------- Estilos NOSOTROS -------*/
+	
+.nosotros__txt{
+	font-size: 17px;
+	text-align: justify;
+	line-height: 25px;
+}		
+
+	
+/*------- Estilos FOOTER-------*/	
+	
+.contact__txt{
+	padding-top: 25px;
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 14px;
+	} 		
+	
+}
+
+/*------- Estilos PROYECTOS-------*/
+.h4{
+	font-size: 24px;
+	padding: 120px 0px;
+}
+}
+
+
+@media(min-width:1440px){
+
+
+/*------- Estilos del menu -------*/	
+
+	
+}
+
+
+
+

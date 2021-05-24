@@ -1,0 +1,856 @@
+
+/*------- Estilo de letra propio matma-------*/
+@font-face
+{
+ font-family: "matma";
+ src: url("../tipografia/helvetica-lt.ttf");
+}
+
+/*------- Estilos Generales-------*/
+
+*{
+box-sizing: border-box;	
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+body{
+    font-family: 'matma';
+	letter-spacing: 1.5px;
+	line-height: 20px;
+	background-color: #222525;
+	
+}
+
+h1,h2,h3,h4,a,p{
+	font-family: 'matma';
+	letter-spacing: 1.5px;
+}
+
+.link {color:#939699; text-decoration:none;
+font-family: 'matma'; font-size: 8px;}
+
+.link:hover {color:#fff;text-decoration:none;}
+
+.titulo__pro{
+	color: #939699;
+	margin-left: 10px;
+	font-size: 15px;
+	margin-top: 40px;
+}
+/*------- Estilos header-------*/
+
+.header {
+	height: 30px;
+}
+
+.header .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.logo{
+	width: 20%;
+	margin: 5px;
+}
+
+.icon-menu {
+display: block;
+width: 50px;
+height: 30px;
+font-size: 30px;
+color: #939699;
+text-align: center;
+line-height: 35px;
+border-radius: 5px;
+margin: 5px;
+margin-left: auto;
+cursor: pointer;
+}
+/*------- Estilos del menu -------*/
+.nav{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	left: -1000%;
+	transition: all 0.8s;
+	z-index: 1000;
+}
+
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: rgba(0,0,0,1);
+	z-index: 100;
+    
+}
+.menu__link {
+	display: block;
+	padding: 15px;
+	color: #939699;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: 10px;	
+}
+
+.menu__link:hover, .select{
+	color: #fff;
+}
+
+.mostrar{
+	left: 0;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+
+.flexsearch--input {
+  -webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+    border-style: none;
+    color:#939699;
+    font-family: 'matma';
+	letter-spacing: 4px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin-left: 15px;
+	font-size: 12px;
+	background: none;
+	margin-bottom: 10px;
+	margin-top: 5p10;
+	padding-top: 15px;
+	
+}
+.flexsearch--submit {
+  display: block;
+  padding: 15PX;
+  border: none;
+  margin-top: -7px; /* margin-top + border-width */
+  margin-right: 0px; /* border-width */
+  background: transparent;
+  color: #939699;
+  font-family: 'matma';
+  font-size: 22px;
+  
+}
+.flexsearch--input:focus {
+  outline: none;
+  border-color: #fff;
+}
+.flexsearch--input:focus.flexsearch--submit {
+ 	color: #fff; 
+}
+.flexsearch--submit:hover {
+  color: #fff;
+  cursor: pointer;
+}
+::-webkit-input-placeholder {
+	color: #939699;  
+}
+input:-moz-placeholder {
+  color: #fff;
+}
+/***********************
+ * FIN Estructura menu buscar *
+ ***********************/
+
+/*------- Estilos del banner -------*/
+
+.banner{
+	
+}
+.banner .contenedor {
+	color: #bcbebf;	
+	text-align: justify;
+}
+.banner_txt{
+    display: none;
+	position: absolute;
+	top: 11%;
+	right: 60%;
+	font-size: 6px;
+	text-align: justify;
+	padding-left: 15px;
+	line-height: 10px;
+}
+
+
+/*------- Estilos PROYECTOS -------*/
+
+
+.info_colummna{
+	color: #939699;
+	margin-bottom: 5px;
+	
+}
+
+.info__titulo, .ant__proyecto {
+	color: #939699;
+	margin-left: 10px;
+	font-size: 8px;
+	margin-top: 5px 0px;
+}
+
+
+.info__titulo:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+/*------- Estilos PAGINA PROYECTOS-------*/
+.sig__proyecto{
+	width: 100%;
+	font-size: 12px;
+	text-align: right;
+	margin-top: -30px;
+}
+
+.ant__proyecto{
+	display: none;
+}
+
+.ant__proyecto_mov{
+
+}
+/*------- Estilos SEGUNDO BANNER -------*/
+
+.gif__titulo{
+	font-size: 8px;
+	color: #939699;
+	text-align: right;
+	margin-top: -27px;
+}
+
+
+.gif__titulo:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+.gif__titulop{
+	font-size: 14px;
+	color: #f25a2c;
+	text-align: right;
+	margin-top: -27px;
+}
+
+
+.gif__titulop:hover{
+	color:#fff;
+	text-decoration:none;
+}
+
+/*------- Estilos NOSOTROS -------*/
+
+.nosotros__txt{
+	color: #939699;
+	font-size: 10px;
+	margin-left: 10px;
+	text-align: justify;
+}
+
+/*------- Estilos SOCIOS -------*/
+
+.socios_titulo{
+color: #939699;
+font-size: 12px;
+margin-left: 10px;
+margin-top: 20px;
+}
+
+.socioscolu{
+	margin-top: 20px;
+}
+
+.link__titulo{
+	margin-left: 10px;
+}
+
+
+/*------- Estilos TIENDA-------*/
+
+.tiendamas{
+	text-align: right;
+	margin-top: -26px;
+	font-size: 8px;
+}
+
+/*------- Estilos FOOTER-------*/
+
+
+.footer{
+	background-color: #000;
+}
+.contact__txt{
+	
+	color: #939699;
+	font-size: 8px;
+	text-align: center;
+	margin-left: 0px;
+}
+
+
+/*------- Estilos RESPONSIVE-------*/
+
+@media(min-width:300px){
+    .icon-menu {
+    width: 8%; 
+    margin-top: -1px;
+    font-size: 25px;
+    }
+    .logo{
+	width: 40%;
+	margin: 5px;
+    }
+     h1{
+      font-size: 8px;
+    }
+    .header{
+        height: 40px;
+    }
+    .titulo__pro{
+	margin-top: 30px;
+}
+    .flexsearch--input {
+        font-size: 11px;
+        margin-left: 18px;
+        margin-top: 15px;
+    }
+    .nosotros__txt{
+    letter-spacing: 0.5px;
+    padding-right: 20px;
+    line-height: 15px;
+    }
+    .info__titulo {
+        margin-top: 2px;
+    }
+    .gif__titulop{
+	font-size: 10px;
+	color: #f25a2c;
+	text-align: right;
+	margin-top: -27px;
+}
+    .contact__txt{   
+    text-align: left;
+    font-size: 10px;
+    p line-height: 2px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .contact__txt1{
+    padding-top: 5px;
+    text-align: left;
+    font-size: 10px;
+    p line-height: 400%;
+    margin: 10px;
+    color: #939699;
+    } 
+    .linkcontacto { 
+        font-size: 10px;
+    }
+}
+
+@media(min-width:480px){
+
+.logo{
+width: 20%;
+margin-left: 10px;
+}
+.icon-menu {
+display: block;
+width: 10%;
+height: -20px;
+font-size: 20px;
+color: #939699;
+text-align: center;
+line-height: 45px;
+border-radius: 5px;
+margin-top: -5px;
+margin-left: auto;
+cursor: pointer;
+} 
+.menu__link {
+    margin-top: 0px;
+	display: block;
+	padding: 35px;
+	color: #939699;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: 25px;	
+    margin-left: -20px;
+}
+.flexsearch--input {
+	margin-left: 16px;	
+    color: #939699;
+    font-size: 25px;
+    margin-top: 20px;
+} 
+.nosotros__txt{
+    letter-spacing: 0.5px;
+    padding-right: 25px;
+    line-height: 15px;
+    }
+.info__titulo {
+	color: #939699;
+	margin-left: 10px;
+	font-size: 10px;
+	margin-top: 2px;
+}	
+.link__titulo{
+	margin-left: 10px;
+	font-size: 10px;
+}		
+.gif__titulo{
+	font-size: 10px;
+	color: #939699;
+	text-align: right;
+	margin-top: -28px;
+}   
+.gif__titulop{
+	font-size: 10px;
+	color: #f25a2c;
+	text-align: right;
+	margin-top: -28px;
+}	
+.contact__txt{   
+    text-align: left;
+    font-size: 12px;
+    p line-height: 2px;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+.contact__txt1{
+    padding-top: 5px;
+    text-align: left;
+    font-size: 10px;
+    p line-height: 400%;
+    margin: 10px;
+    color: #939699;
+    } 
+.linkcontacto { 
+        font-size: 10px;
+    }
+}
+
+@media(min-width:760px){
+/*------- Estilos Generales-------*/	
+	body{
+	margin: 20px;
+}
+   .titulo__pro{
+	margin-left: 25px;
+	font-size: 17px;
+	width: 100%;
+}
+/*------- Estilos header-------*/
+.header {
+	height: 70px;
+}
+.logo{
+width: 30%;
+margin: 5px;
+margin-left: 20px;
+}
+		
+/*------- Estilos del menu -------*/	
+ .icon-menu {
+display: block;
+width: 20%;
+height: 20px;
+font-size:  35px;
+line-height: 45px;
+margin-top: 5px;
+margin-left: auto;
+cursor: pointer;
+}
+ .nav{
+	top: 100px;	
+}
+.menu__link {
+	margin-left: 10px;
+	font-size: 35px;
+	display: block;
+	padding: 55px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	font-size: 25px;	
+    margin-left: -10px;
+}
+.flexsearch--input {
+	margin-left: 45px;
+    font-size:25px 
+        
+}
+	
+/*------- Estilos PROYECTOS -------*/
+.info__titulo {
+	margin-left: 25px;
+	font-size: 15px;
+	margin-top: 5px;
+	
+}
+.gif__titulop{
+	font-size: 14px;
+	color: #f25a2c;
+	text-align: right;
+	margin-top: -35px;
+}
+.info{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 0;
+	}
+.info_colummna{
+	width: 48.5%;
+	
+}
+	
+/*------- Estilos PAGINA PROYECTOS-------*/	
+	.ant__proy_mov{
+		display: none;
+	}
+	.ant__proyecto{
+		display: block;
+		font-size: 12px;
+}	
+    .ant__proyecto:hover{
+		color: #fff;
+}	
+	.sig__proyecto{
+		width: 95%;
+		margin-top: 10px;
+		margin-right: 75px;
+	}
+	
+/*------- Estilos SEGUNDO BANNER -------*/
+	
+.gif__titulo{
+    font-size: 15px;
+	color: #939699;
+	text-align: right;
+	margin-top: -25px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+		
+	
+/*------- Estilos NOSOTROS -------*/	
+	
+.nosotros{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}		
+.nosotros__columna{
+	width: 38%;	
+	}
+.nosotros__columnaimg{
+	width: 58%;	
+	}	
+.nosotros__txt{
+	color: #939699;
+	font-size: 12px;
+	margin-left: 20px;
+	text-align: justify;
+    letter-spacing: 0.3px;
+    line-height: 13px;
+}
+	
+/*------- Estilos SOCIOS -------*/
+.socios{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}	
+.socioscolu{
+	width: 31%;
+	}	
+.socios_titulo{
+	margin-left: 25px;
+	font-size: 13px;
+	}	
+.link__titulo{
+	margin-left: 25px;
+	font-size: 10px;
+}
+		
+/*------- Estilos FOOTER-------*/		
+.contacto{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}
+.contactodesc{
+		width: 31%;
+	}
+.contact__txt{
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 12px;
+	}
+.contact__txt1{
+font-size: 12px;
+    }
+.linkcontacto{
+	font-size: 12px;		
+	}
+	
+}
+
+@media(min-width:1024px){
+	
+/*------- Estilos Generales-------*/
+body{
+	margin: 30px;
+}	
+.titulo__pro{
+	font-size: 20px;
+	width: 100%;
+}
+    
+/*------- Estilos header-------*/
+.header {
+	height: 60px;
+}	
+.logo{
+width: 25%;
+margin: 5px;
+margin-left: 21px;
+}
+
+/*------- Estilos del menu -------*/	
+	
+.nav{
+	position: absolute;
+	top: 25px;
+	left: 34%;
+	transition: all 0.8s;
+	z-index: 100;
+    background-color: none;
+}	
+.icon-menu{
+	display: none;
+	}	
+.fixed{
+	position:fixed; 
+	top:0;
+    width: 20%;
+    height: 7%;
+	}
+    
+    .fixed1{
+	display: none;
+	}
+    
+.menu{
+	display: flex;	
+	margin-right: 20px;
+    background: none;
+	}	
+.menu__link {
+	margin-left: 10px;
+	font-size: 14px;
+    margin-top: -30px;
+	
+}    
+.flexsearch--input {
+	margin-left: 15px;
+	font-size: 14px;
+    margin-top: 10px;      	
+}
+
+/*------- Estilos PROYECTOS -------*/	
+   
+.info__titulo {
+	margin-top: 5px;
+	
+}
+	
+/*------- Estilos NOSOTROS -------*/		
+.nosotros__txt{
+	font-size: 12px;
+	text-align: justify;
+	line-height: 14px;
+}
+.contact__txt{
+	margin-top: 15px;
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 12px;
+	} 	
+.linkcontacto{
+	font-size: 12px;		
+	}     
+.gif__titulop{
+	font-size: 14px;
+	color: #f25a2c;
+	text-align: right;
+	margin-top: -27px;
+}
+.gif__titulop:hover{
+	color:#fff;
+	text-decoration:none;
+}
+	
+}
+
+@media(min-width:1280px){
+
+/*------- Estilos header-------*/
+.logo{
+width: 30%;
+margin-bottom: 15px;
+margin-left: 21px;
+}
+.header {
+	width: 100%;
+    height: 80px;
+	}
+/*------- Estilos del menu -------*/	
+.nav{
+	left: 36.5%;
+}       	
+.fixed{
+	position:fixed; 
+	top:0;
+    width: 20%;
+	}
+.menu{
+	display: flex;	
+	margin-right: 20px;
+    background: none;
+
+	}
+.menu__link {
+	margin-left: 10px;
+	font-size: 20px;
+    letter-spacing: 3px;	
+}
+.flexsearch--input {
+        margin-top: 8px;
+	margin-left: 15px;
+	font-size: 20px;
+	
+}
+/*------- Estilos del banner -------*/
+.cursos__img {
+		width: 100%;
+	}	
+/*------- Estilos NOSOTROS -------*/
+.nosotros__txt{
+	font-size: 16px;
+	text-align: justify;
+     letter-spacing: 0.5px;
+	line-height: 20px;
+}		
+.socios_titulo{
+		font-size: 16px;
+	}	
+.link__titulo{
+		font-size: 14px;
+	}
+/*------- Estilos FOOTER-------*/		
+.contact__txt{
+	padding-top: 25px;
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 16px;
+    
+	} 
+.linkcontacto{
+	font-size: 16px;		
+	}	
+.contact__txt1{
+	font-size: 16px;		
+	}
+
+
+
+@media(min-width:1440px){
+
+/*------- Estilos header-------*/
+.logo{
+width: 30%;
+margin-bottom: 15px;
+margin-left: 21px;
+}
+.header {
+	width: 100%;
+    height: 80px;
+	}
+/*------- Estilos del menu -------*/	
+.nav{
+	left: 36.5%;
+}       	
+.fixed{
+	position:fixed; 
+	top:0;
+    width: 20%;
+	}
+.menu{
+	display: flex;	
+	margin-right: 20px;
+    background: none;
+
+	}
+.menu__link {
+	margin-left: 10px;
+	font-size: 20px;
+    letter-spacing: 3px;	
+}
+.flexsearch--input {
+        margin-top: 8px;
+	margin-left: 15px;
+	font-size: 20px;
+	
+}
+/*------- Estilos del banner -------*/
+.cursos__img {
+		width: 100%;
+	}	
+/*------- Estilos NOSOTROS -------*/
+.nosotros__txt{
+	font-size: 16px;
+	text-align: justify;
+     letter-spacing: 0.5px;
+	line-height: 20px;
+}		
+.socios_titulo{
+		font-size: 16px;
+	}	
+.link__titulo{
+		font-size: 14px;
+	}
+/*------- Estilos FOOTER-------*/		
+.contact__txt{
+	padding-top: 25px;
+	text-align: justify;
+	margin-left: 25px;
+	font-size: 16px;
+    
+	} 
+.linkcontacto{
+	font-size: 16px;		
+	}	
+.contact__txt1{
+	font-size: 16px;		
+	}
+
+
+	
+}
+	
+
+
+

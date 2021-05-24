@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="utf-8">
+    <title>MATMA</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+     <link rel="stylesheet" href="css/fonts.css">
+   <!-- <link rel="stylesheet" href="css/buscar.css">-->
+    
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link rel="shortcut icon" href="imagenes/index/icono.png">
+     <!-- menu estatico -->
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+       <!-- menu estatico -->
+  </head>
+<body>
+	  <header class="header">
+	  	<div class="contenedor">
+	  		<a  href="index.html"><img src="imagenes/index/logomatma.png" alt="" class="logo"></a>
+	  		<span class="icon-menu" id="btn-menu"></span>
+	  		<nav class="nav" id="nav">
+	  		<ul class="menu">
+	  			<li class="menu__item"><a class="menu__link select"  href="index.html#proyectos">PROYECTOS</a></li>
+	  			<li class="menu__item"><a class="menu__link"  href="index.html#nosotros">NOSOTROS</a></li>
+	  			<li class="menu__item"><a class="menu__link"  href="index.html#tienda">TIENDA</a></li>
+	  			<!--<li class="menu__item"><a class="menu__link"  href="">BUSCAR</a></li> -->
+		
+			<form class="flexsearch--form" action="#" method="post">
+				<div class="flexsearch--input-wrapper">
+					<input class="flexsearch--input" type="search" placeholder="BUSCAR">
+				</div>
+				<input class="flexsearch--submit" type="submit" value=""/>
+			</form>
+    
+	  		</ul>	
+	  		</nav>
+	  	</div>
+	  	
+<!-- inicio Menu Estatico  -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('header').outerHeight(true);
+    var altura_del_menu = $('.menu').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.logo').addClass('fixed');
+        $('.menu').addClass('fixed');
+        $('.contenedor').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.logo').removeClass('fixed');
+        $('.menu').removeClass('fixed');
+        $('.contenedor').css('margin-top', '0');
+    }
+}
+
+</script>    
+          
+<!-- Fin Menu Estatico  -->
+          
+	  </header>  
+	  
+	  <mmaincontenedorain class="main">
+	  <div class="contenedor">
+	  	<section id="proyectos" class="info">
+	  		<h1  class="titulo__pro">CATALOGO PROYECTOS</h1>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/todoagrobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">TODO AGRO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/monteabajobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">MONTE ABAJO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/cerobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">CERO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/Kerobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">KERO</h2></a>
+	  		</article>
+	  	</section>
+	  
+	    
+	    <section class="info">
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/todoagrobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">TODO AGRO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/monteabajobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">MONTE ABAJO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/cerobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">CERO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/Kerobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">KERO</h2></a>
+	  		</article>
+	  	</section>
+	  	
+	  	  <section class="info">
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/todoagrobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">TODO AGRO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/monteabajobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">MONTE ABAJO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/cerobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">CERO</h2></a>
+	  		</article>
+	  		<article class="info_colummna">
+	  			<img src="imagenes/index/Kerobn.jpg" alt="" class="info__img">
+	  			<a href="#" class="link"><h2 class="info__titulo">KERO</h2></a>
+	  		</article>
+	  	</section>
+	  	
+	  	<section class="cursos">
+	    	<img src="imagenes/index/guanchaka3.gif" alt="" class="cursos__img">
+	    	<a href="#" class="link"><h2 class="info__titulo">BLASFEMIA</h2></a>
+	    	<a href="#" class="link"><h2 class="gif__titulo">+PROYECTOS</h2></a>
+	    </section>
+	
+
+	  
+	
+	  </div>	
+	  </main>
+	  
+	 <h1 class="titulo__pro">CONTACTO</h1>
+     <footer class="footer">
+     
+   <section class="contacto">
+	  		<premios class="contactodesc">
+	  			<p class="contact__txt">Av. Leopoldo Ormaza <br>MJ-L10 y Augusto Torres<br>Riobamba, Ecuador
+	  			<br><br><a href="#" class="link linkcontacto"> Nuevos Negocios</a></p>
+	  		</premios><br><br>
+	  		
+	  		<premios class="contactodesc">
+	  			<p class="contact__txt">+ 0984075844 <br>+ 0984899628<br> <a href="#" class="link linkcontacto">info@matma.com</a><br><br><a href="#" class="link linkcontacto">Pasantías</a>
+				</p>
+	  		</premios><br><br>
+	  		
+	  		<premios class="contactodesc">
+	  			<p class="contact__txt"><a href="#" class="link  linkcontacto">Facebook</a><br><a href="#" class="link linkcontacto">Instagram</a><br><a href="#" class="link linkcontacto">Vimeo</a><br><br>©matma<br>derechos reservados</p>
+	  		</premios>
+	  </section>>
+	  	
+	  </footer>
+	  <script src="js/menu.js"></script>
+
+            
+</body>
+</html>
